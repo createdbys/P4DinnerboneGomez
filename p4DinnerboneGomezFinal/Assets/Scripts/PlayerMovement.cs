@@ -64,7 +64,7 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         MovePlayer();
-        anim.SetBool("isRunning", false);
+        
 
     }
 
@@ -120,7 +120,7 @@ public class PlayerMovement : MonoBehaviour
 
         rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
 
-        anim.SetBool("isRunning", false);
+        
     }
     private void ResetJump()
     {

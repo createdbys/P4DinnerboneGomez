@@ -7,7 +7,7 @@ public class EnemySpawner : MonoBehaviour
     public GameObject enemyZombie;
     private int xPos;
     private int zPos;
-    private float spawnRate = 2.0f;
+    private float spawnRate = 0.8f;
     private bool playerIsAlive = true;
 
     // Start is called before the first frame update
