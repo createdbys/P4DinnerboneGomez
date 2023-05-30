@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2351996}
   - component: {fileID: 6453954}
   - component: {fileID: 20552548}
+  - component: {fileID: 1137628464262951233}
   m_Layer: 0
   m_Name: Barrier_1A
   m_TagString: Untagged
@@ -118,3 +119,16 @@ LODGroup:
     renderers:
     - renderer: {fileID: 2351996}
   m_Enabled: 1
+--- !u!65 &1137628464262951233
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 141188}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2279387, y: 2.6184871, z: 4.7953463}
+  m_Center: {x: 0.28689387, y: 0.18852055, z: -0.062318444}

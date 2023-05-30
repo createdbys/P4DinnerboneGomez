@@ -7,9 +7,8 @@ public class EnemySpawner : MonoBehaviour
     public GameObject enemyZombie;
     private int xPos;
     private int zPos;
-    private int enemyCount;
-    private int numEnemies = 10;
     private float spawnRate = 2.0f;
+    private bool playerIsAlive = true;
 
     // Start is called before the first frame update
     void Start()
@@ -19,13 +18,12 @@ public class EnemySpawner : MonoBehaviour
 
     IEnumerator EnemySpawn()
     {
-        while(enemyCount < numEnemies)
+        while(playerIsAlive == true)
         {
-            xPos = Random.Range(128, 138);
-            zPos = Random.Range(-14, 14);
+            xPos = Random.Range(128, 132);
+            zPos = Random.Range(-9, 5);
             Instantiate(enemyZombie, new Vector3(xPos, 2, zPos), Quaternion.identity);
             yield return new WaitForSeconds(spawnRate);
-            enemyCount += 1;
         }
     }
 
